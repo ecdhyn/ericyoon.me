@@ -1,28 +1,33 @@
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    font-family: Arial, sans-serif;
-}
-
-h1 {
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin: 0;
-}
-
-h2 {
-    text-align: center;
-    position: absolute;
-    top: 55%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin: 0;
-    font-size: 0.9em;
+@font-face {
+    font-family: 'Virgil';
+    src: url('Virgil.woff2') format('woff2');
     font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Virgil', Arial, sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 10px 20px; 
+    font-size: 0.9em;
+    line-height: 1.5;
+}
+
+#content {
+    max-width: 600px;
+    white-space: pre-line;
+}
+
+#content div {
+    display: inline;
+}
+
+a {
+    color: #0066cc;
+    text-decoration: underline;
+}
+
+a:hover {
+    text-decoration: underline;
 }
